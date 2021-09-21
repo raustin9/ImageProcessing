@@ -121,7 +121,7 @@ int main(int argc, char** argv)
             Image to_colormask(filename.c_str());
 
             /* Get values to colormap */
-            printf("[0,1] - Red  > ");
+            printf("[0,1] - Red   > ");
             cin >> r;
             printf("[0,1] - Green > ");
             cin >> g;
