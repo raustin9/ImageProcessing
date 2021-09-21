@@ -71,7 +71,7 @@ int main(int argc, char** argv)
             Image first_diff(filename.c_str());
 
             printf("Name of second image (include folders)");
-            cin >> filenames.size();
+            cin >> filename;
             Image second_diff(filename.c_str());
 
             /* Diffmap the two images */
@@ -79,7 +79,7 @@ int main(int argc, char** argv)
 
             /* Write the new file */
             printf("Name of new file: > diffed_images/");
-            cin >> filenames;
+            cin >> filename;
             first_diff.write(filename.c_str());
             printf("New file in diffed_images folder\n");
 
