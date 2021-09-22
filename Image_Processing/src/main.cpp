@@ -64,7 +64,25 @@ int main(int argc, char** argv)
             /**/
         } else if (option == '1') {
             // diff option
-            printf("Currently unsupported :(\n");
+            printf("CHOSEN: Diffmap\n");
+
+            printf("Name of first file (include folders) > ");
+            cin >> filename;
+            Image first_diff(filename.c_str());
+
+            printf("Name of second image (include folders)");
+            cin >> filenames.size();
+            Image second_diff(filename.c_str());
+
+            /* Diffmap the two images */
+            first_diff.diffmap(second_diff);
+
+            /* Write the new file */
+            printf("Name of new file: > diffed_images/");
+            cin >> filenames;
+            first_diff.write(filename.c_str());
+            printf("New file in diffed_images folder\n");
+
         } else if (option == '2') {
             // diff scale option
             printf("Currently unsupported :(\n");
